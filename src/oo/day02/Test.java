@@ -4,15 +4,15 @@ public class Test {
 
 	public static void main(String[] args) {
 		J t = new J(1,5);
-		System.out.println("Ô­Ê¼Î»ÖÃ");
+		System.out.println("åˆå§‹ä½ç½®");
 		t.print();
-		System.out.println("ÏÂÂäºó");
+		System.out.println("ä¸‹è½å");
 		t.drop();
 		t.print();
-		System.out.println("×óÒÆºó");
+		System.out.println("å·¦ä»¥å");
 		t.moveLeft();
 		t.print();
-		System.out.println("ÓÒÒÆºó");
+		System.out.println("å³ç§»å");
 		t.moveRight();
 		t.print();
 	}
