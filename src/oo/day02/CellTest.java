@@ -4,7 +4,7 @@ public class CellTest {
 
 	public static void main(String[] args) {
 		Cell c = new Cell(2,3);
-		System.out.println("(" + c.getCellInfo() + ")");
+		System.out.println(c.getCellInfo());
 		printWall(20, 10, c);
 	}
 

@@ -49,6 +49,7 @@ public class Guessing {
 			} while (flag[num]);
 			chs[i] = letters[num];
 			flag[num] = true;
+			
 		}
 		return chs;
 	}
