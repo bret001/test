@@ -12,7 +12,7 @@ public class Tetromino {
 			cell[i].row++;
 		}
 	}
- 
+
 	void moveLeft() {
 		for (int i = 0; i < cell.length; i++) {
 			cell[i].col--;
