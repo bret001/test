@@ -12,9 +12,14 @@ public class Test {
 		int colCount = 1;
 		for (int i = 1; i <= row; i++) {
 			for (int j = 1; j <= col; j++) {
-				if (i == t.cell[0].row && j == t.cell[0].col) {
-					System.out.print("* ");
-				} else {
+				boolean flag = true;
+				for (int k = 0; k < t.cell.length; k++) {
+					if (i == t.cell[k].row && j == t.cell[k].col) {
+						System.out.print("* ");
+						flag = false;
+					}
+				}
+				if (flag) {
 					System.out.print("- ");
 				}
 			}
