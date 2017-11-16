@@ -17,6 +17,7 @@ public class Test {
 					if (i == t.cell[k].row && j == t.cell[k].col) {
 						System.out.print("* ");
 						flag = false;
+						break;
 					}
 				}
 				if (flag) {
