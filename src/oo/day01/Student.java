@@ -1,11 +1,11 @@
 package oo.day01;
 
 public class Student {
-	String name;
 	int age;
+	String name;
 	String address;
-	void sayhi() {
-		System.out.println("我叫"+name+"，今年"+age+"岁，家住"+address);
+
+	void introduce() {
+		System.out.println("My name is " + name + ", I am " + age + " years old, I am now living at " + address);
 	}
-	
 }
