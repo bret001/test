@@ -1,14 +1,34 @@
 package oo.day02;
 
+import java.util.Scanner;
+
 public class CellTest {
 
 	public static void main(String[] args) {
-		Cell c = new Cell();
-		c.row = 1;
-		c.col = 2;
-		c.drop();
-		c.getCellInfo();
+		Cell c = new Cell(3, 3);
 		printWall(c);
+		System.out.println();
+		System.out.println("1 —— 下落，2——向左，3——向右，0 —— 退出");
+		Scanner scan = new Scanner(System.in);
+		int input = scan.nextInt();
+		while (input != 0) {
+			switch (input) {
+			case 1:
+				c.drop();
+				break;
+			case 2:
+				c.moveleft();
+				break;
+			case 3:
+				c.moveright();
+				break;
+			}
+			printWall(c);
+			System.out.println("1 —— 下落，2——向左，3——向右，0 —— 退出");
+			input = scan.nextInt();
+		}
+		System.out.println("游戏结束");
+		scan.close();
 
 	}
 

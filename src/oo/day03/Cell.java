@@ -1,12 +1,12 @@
-package oo.day02;
+package oo.day03;
 
 public class Cell {
-	int row;
-	int col;
+	int row; // 行号
+	int col; // 列号
 
 	Cell(int row, int col) {
-		this.row = row; // 行号
-		this.col = col; // 列号
+		this.row = row;
+		this.col = col;
 	}
 
 	Cell(int n) {
@@ -17,24 +17,20 @@ public class Cell {
 		this(0, 0);
 	}
 
-	void moveleft() {
-		col--;
-	}
-
-	void moveright() {
-		col++;
-	}
-
-	void moveright(int n) {
-		col += n;
-	}
-
 	void drop() {
 		row++;
 	}
 
 	void drop(int n) {
 		row += n;
+	}
+
+	void moveLeft() {
+		col--;
+	}
+
+	void moveLeft(int n) {
+		col -= n;
 	}
 
 	void getCellInfo() {
