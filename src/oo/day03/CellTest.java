@@ -3,7 +3,7 @@ package oo.day03;
 public class CellTest {
 
 	public static void main(String[] args) {
-		T t = new T(0,0);
+		T t = new T(0, 0);
 		printWall(t);
 
 	}
@@ -13,10 +13,17 @@ public class CellTest {
 		int colCount = 0;
 		for (int i = 0; i < 20; i++) {
 			for (int j = 0; j < 10; j++) {
-				if (i == t.c[0].row && j == t.c[0].col) {
-					System.out.print("* ");
-				} else {
+				boolean flag = true;
+				for (int k = 0; k < t.c.length; k++) {
+					if (i == t.c[k].row && j == t.c[k].col) {
+						flag = false;
+						break;
+					}
+				}
+				if (flag) {
 					System.out.print("- ");
+				} else {
+					System.out.print("* ");
 				}
 			}
 			System.out.println(rowCount);
