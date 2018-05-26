@@ -1,21 +1,25 @@
-package oo.day03;
+package oo.day04;
 
 public class CellTest {
 
 	public static void main(String[] args) {
-		Tetromino t = new L(0, 0);
-		printWall(t);
+		Tetromino o = new O(0,2);
+		o.moveRight(1);
+		printWall(o);
+		o.print();
+		
 
 	}
 
-	public static void printWall(Tetromino t) {
+	public static void printWall(Tetromino cell) {
 		int rowCount = 0;
 		int colCount = 0;
+
 		for (int i = 0; i < 20; i++) {
 			for (int j = 0; j < 10; j++) {
 				boolean flag = true;
-				for (int k = 0; k < t.c.length; k++) {
-					if (i == t.c[k].row && j == t.c[k].col) {
+				for (int k = 0; k < cell.c.length; k++) {
+					if (i == cell.c[k].row && j == cell.c[k].col) {
 						flag = false;
 						break;
 					}

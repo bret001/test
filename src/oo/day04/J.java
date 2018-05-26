@@ -1,4 +1,4 @@
-package oo.day03;
+package oo.day04;
 
 public class J extends Tetromino {
 	J(int row, int col) {
