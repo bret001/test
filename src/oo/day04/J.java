@@ -8,4 +8,13 @@ public class J extends Tetromino {
 		c[3] = new Cell(row + 2, col - 1);
 	}
 
+	J() {
+		this(0, 0);
+	}
+
+	void print() {
+		System.out.println("This is J");
+		super.print();
+	}
+
 }

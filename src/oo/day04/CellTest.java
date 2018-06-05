@@ -3,11 +3,11 @@ package oo.day04;
 public class CellTest {
 
 	public static void main(String[] args) {
-		Tetromino o = new O(0,2);
-		o.moveRight(1);
-		printWall(o);
-		o.print();
-		
+		Tetromino t = new T(0, 2);
+		t.print();
+
+		Tetromino j = new J(0, 2);
+		j.print();
 
 	}
 

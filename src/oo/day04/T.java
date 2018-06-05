@@ -11,5 +11,10 @@ public class T extends Tetromino {
 	T() {
 		this(0, 0);
 	}
+	
+	void print() {
+		System.out.println("This is T");
+		super.print();
+	}
 
 }
